@@ -345,7 +345,7 @@
     transition: background 0.3s;
     cursor: default;
   }
-  .service-card:hover { background: rgba(0,255,200,0.04); }
+  .service-card:hover { background: rgba(255,140,0,0.04); }
 
   .svc-icon {
     width: 48px; height: 48px;
@@ -382,7 +382,6 @@
 
   @media (max-width: 768px) {
     #about { grid-template-columns: 1fr; gap: 3rem; }
-    nav ul { display: none; }
   }
 
   .about-visual {
@@ -451,7 +450,7 @@
     transition: border-color 0.3s, transform 0.3s;
     position: relative;
   }
-  .plan-card:hover { border-color: rgba(0,255,200,0.3); transform: translateY(-4px); }
+  .plan-card:hover { border-color: rgba(255,140,0,0.4); transform: translateY(-4px); }
 
   .plan-card.featured {
     border-color: var(--accent);
@@ -864,7 +863,119 @@
   }
   .faq-item.open .faq-answer { max-height: 300px; padding: 0 2rem; }
 
-  /* Grid decoration */
+  /* ══════════════════════════════
+     RESPONSIVE — TABLET & MOBILE
+  ══════════════════════════════ */
+
+  /* Tablet (≤ 900px) */
+  @media (max-width: 900px) {
+    section { padding: 4rem 5vw; }
+    #stats { padding: 4rem 5vw; }
+
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .plans-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .testi-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .price-table { max-width: 100%; }
+
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+    .footer-links { gap: 1.25rem; }
+  }
+
+  /* Mobile (≤ 640px) */
+  @media (max-width: 640px) {
+    section { padding: 3.5rem 4vw; }
+    #stats {
+      padding: 3rem 4vw;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    h1 { font-size: clamp(1.9rem, 10vw, 3rem); }
+
+    .hero-sub { font-size: 0.95rem; }
+
+    .hero-btns { flex-direction: column; align-items: center; }
+    .btn-primary, .btn-ghost { width: 100%; max-width: 280px; text-align: center; }
+
+    /* Planet smaller on mobile */
+    .planet-wrap {
+      width: 90vw;
+      bottom: -30vw;
+    }
+
+    /* About visual smaller */
+    .about-visual { max-width: 260px; margin: 0 auto; }
+    .about-orb { font-size: 3.5rem; }
+
+    /* Services single column */
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    .service-card { padding: 1.75rem; }
+
+    /* Price table stacked */
+    .price-row {
+      grid-template-columns: 42px 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.75rem;
+      padding: 1.2rem 1.25rem;
+    }
+    .price-tag {
+      grid-column: 2;
+      font-size: 1.4rem;
+      justify-self: start;
+    }
+    .price-btn {
+      grid-column: 2;
+      justify-self: start;
+      padding: 0.4rem 0.9rem;
+    }
+
+    /* Plans single column */
+    .plans-grid { grid-template-columns: 1fr; }
+    .plan-card { padding: 2rem 1.5rem; }
+
+    /* Testimonials single column */
+    .testi-grid { grid-template-columns: 1fr; }
+
+    /* FAQ padding */
+    .faq-question { padding: 1.2rem 1.25rem; font-size: 0.88rem; }
+    .faq-answer { padding: 0 1.25rem; }
+    .faq-item.open .faq-answer { padding: 0 1.25rem; }
+
+    /* Contact form */
+    .contact-form { padding: 0 0.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+
+    /* Footer */
+    footer { padding: 2.5rem 4vw; text-align: center; align-items: center; }
+    .footer-links { justify-content: center; gap: 1rem; }
+
+    /* Section titles */
+    .section-title { font-size: clamp(1.3rem, 5vw, 1.8rem); }
+  }
+
+  /* Small mobile (≤ 400px) */
+  @media (max-width: 400px) {
+    #stats { grid-template-columns: 1fr 1fr; }
+    .stat-num { font-size: 1.8rem; }
+    .hero-badge { font-size: 0.58rem; letter-spacing: 0.12em; }
+    .price-row { padding: 1rem; }
+    .plan-card { padding: 1.5rem 1.2rem; }
+  }
   .grid-bg {
     position: absolute;
     inset: 0;
@@ -1364,18 +1475,28 @@
   });
 
   // ── ACTIVE NAV ON SCROLL ──
-  const sections = document.querySelectorAll('section[id], div[id]');
+  const allSections = ['hero', 'about', 'services', 'prices', 'faq', 'contact'];
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
-  const scrollSpy = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector(`nav a[href="#${e.target.id}"]`);
-        if (active) active.classList.add('active');
+
+  function updateActiveNav() {
+    const scrollY = window.scrollY + 120; // offset for fixed nav height
+    let current = 'hero';
+
+    allSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) current = id;
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
       }
     });
-  }, { threshold: 0.4 });
-  sections.forEach(s => scrollSpy.observe(s));
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav(); // run on load
 
   // ── FAQ ACCORDION ──
   document.querySelectorAll('.faq-question').forEach(btn => {
