@@ -523,12 +523,16 @@
   }
   .plan-btn:hover { background: var(--accent); border-color: var(--accent); color: var(--bg); }
   .plan-card.featured .plan-btn {
-    background: var(--accent);
+    background: transparent;
     border-color: var(--accent);
-    color: var(--bg);
+    color: var(--accent);
     font-weight: 600;
   }
-  .plan-card.featured .plan-btn:hover { opacity: 0.85; }
+  .plan-card.featured .plan-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+    opacity: 1;
+  }
 
   /* ── TESTIMONIALS ── */
   .testi-grid {
@@ -701,6 +705,105 @@
     z-index: 9999;
   }
 
+  /* ── PRICE TABLE ── */
+  .price-table {
+    margin-top: 3.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 860px;
+  }
+
+  .price-row {
+    display: grid;
+    grid-template-columns: 52px 1fr auto auto;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.4rem 2rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.25s;
+  }
+  .price-row:last-child { border-bottom: none; }
+  .price-row:hover { background: rgba(255,140,0,0.05); }
+
+  .price-icon {
+    width: 46px; height: 46px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255,140,0,0.12), rgba(255,69,0,0.08));
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .price-name {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.03em;
+  }
+
+  .price-desc {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .price-tag {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .price-tag sup {
+    font-size: 0.85rem;
+    vertical-align: super;
+    margin-right: 1px;
+    color: var(--accent);
+  }
+
+  .price-btn {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    font-family: 'Orbitron', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
+  }
+  .price-btn:hover { background: var(--accent); color: var(--bg); }
+
+  @media (max-width: 600px) {
+    .price-row {
+      grid-template-columns: 42px 1fr auto;
+      grid-template-rows: auto auto;
+    }
+    .price-btn { grid-column: 2; justify-self: start; }
+    .price-tag { font-size: 1.3rem; }
+  }
+
+  .plan-coverage {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.75rem;
+    color: var(--text-dim);
+  }
+
+  .plans-title { margin-top: 1rem; }
+
   /* ── FAQ ── */
   .faq-list {
     margin-top: 3rem;
@@ -799,7 +902,7 @@
   <div class="grid-bg"></div>
   <div class="hero-content">
     <div class="hero-badge">★ NEXT-GEN IT SOLUTIONS</div>
-    <h1>Technology<br>from <em>Another</em><br>Dimension</h1>
+    <h1>Your universe of<br><em>technological</em><br>solutions</h1>
     <p class="hero-sub">TechPlanet delivers cutting-edge IT services, cybersecurity, cloud infrastructure, and custom software development that propels your business into the future.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">Launch Your Project</a>
@@ -904,51 +1007,127 @@
   <h2 class="section-title">Simple, Transparent Pricing</h2>
   <p class="section-desc">No hidden fees. No surprises. Choose the plan that fits your orbit.</p>
 
-  <div class="plans-grid">
-    <div class="plan-card reveal">
-      <div class="plan-name">Starter</div>
-      <div class="plan-price"><sup>€</sup>299<sub>/mo</sub></div>
+  <div class="price-table reveal">
+    <div class="price-row">
+      <div class="price-icon">🔧</div>
+      <div class="price-info">
+        <div class="price-name">Equipment Repair</div>
+        <div class="price-desc">Diagnosis and full repair of hardware components and devices</div>
+      </div>
+      <div class="price-tag"><sup>€</sup>50</div>
+      <a href="#contact" class="price-btn">Book</a>
+    </div>
+    <div class="price-row">
+      <div class="price-icon">💿</div>
+      <div class="price-info">
+        <div class="price-name">Software Installation</div>
+        <div class="price-desc">Professional setup and configuration of any software or OS</div>
+      </div>
+      <div class="price-tag"><sup>€</sup>30</div>
+      <a href="#contact" class="price-btn">Book</a>
+    </div>
+    <div class="price-row">
+      <div class="price-icon">⚙️</div>
+      <div class="price-info">
+        <div class="price-name">Equipment Maintenance</div>
+        <div class="price-desc">Preventive cleaning, updates and performance checks</div>
+      </div>
+      <div class="price-tag"><sup>€</sup>20</div>
+      <a href="#contact" class="price-btn">Book</a>
+    </div>
+    <div class="price-row">
+      <div class="price-icon">🖥️</div>
+      <div class="price-info">
+        <div class="price-name">Equipment Installation</div>
+        <div class="price-desc">Setup and connection of new hardware, printers and peripherals</div>
+      </div>
+      <div class="price-tag"><sup>€</sup>20</div>
+      <a href="#contact" class="price-btn">Book</a>
+    </div>
+    <div class="price-row">
+      <div class="price-icon">🛠️</div>
+      <div class="price-info">
+        <div class="price-name">Software Troubleshooting</div>
+        <div class="price-desc">Diagnosing and fixing errors, crashes and system issues</div>
+      </div>
+      <div class="price-tag"><sup>€</sup>25</div>
+      <a href="#contact" class="price-btn">Book</a>
+    </div>
+    <div class="price-row">
+      <div class="price-icon">🛡️</div>
+      <div class="price-info">
+        <div class="price-name">Virus Removal</div>
+        <div class="price-desc">Complete malware scan, removal and system protection setup</div>
+      </div>
+      <div class="price-tag"><sup>€</sup>35</div>
+      <a href="#contact" class="price-btn">Book</a>
+    </div>
+  </div>
+
+  <!-- MONTHLY PLANS -->
+  <div class="plans-title reveal">
+    <div class="section-tag" style="margin-top: 5rem;">Monthly Business Plans</div>
+    <h3 class="section-title">IT Protection Plans for Companies</h3>
+    <p class="section-desc">Keep your business covered every month with proactive support, guaranteed response times and full IT protection tailored to your size.</p>
+  </div>
+
+  <div class="plans-grid reveal">
+
+    <div class="plan-card">
+      <div class="plan-name">Shield Basic</div>
+      <div class="plan-price"><sup>€</sup>149<sub>/mo</sub></div>
       <div class="plan-divider"></div>
+      <div class="plan-coverage">🟢 Basic Protection</div>
       <ul class="plan-features">
-        <li>Up to 10 workstations</li>
-        <li>Business hours support</li>
-        <li>Basic cybersecurity monitoring</li>
-        <li>Cloud backup (100 GB)</li>
-        <li>Monthly system reports</li>
+        <li>Up to 5 devices covered</li>
+        <li>1 on-site visit per month</li>
+        <li>Business hours support (9–18h)</li>
+        <li>Monthly maintenance check</li>
+        <li>Antivirus monitoring</li>
+        <li>Email & phone helpdesk</li>
+        <li>Response within 24 hours</li>
       </ul>
-      <a href="#contact" class="plan-btn">Get Started</a>
+      <a href="#contact" class="plan-btn">Get Shield Basic</a>
     </div>
 
-    <div class="plan-card featured reveal">
+    <div class="plan-card featured">
       <div class="plan-badge">MOST POPULAR</div>
-      <div class="plan-name">Professional</div>
-      <div class="plan-price"><sup>€</sup>799<sub>/mo</sub></div>
+      <div class="plan-name">Shield Pro</div>
+      <div class="plan-price"><sup>€</sup>349<sub>/mo</sub></div>
       <div class="plan-divider"></div>
+      <div class="plan-coverage">🟠 Advanced Protection</div>
       <ul class="plan-features">
-        <li>Up to 50 workstations</li>
-        <li>24/7 helpdesk support</li>
-        <li>Advanced threat protection</li>
-        <li>Cloud infrastructure management</li>
-        <li>Weekly strategy calls</li>
-        <li>Priority response (2h SLA)</li>
+        <li>Up to 20 devices covered</li>
+        <li>3 on-site visits per month</li>
+        <li>Extended support (8–22h)</li>
+        <li>Weekly maintenance & updates</li>
+        <li>Advanced threat detection</li>
+        <li>Cloud backup (500 GB)</li>
+        <li>Response within 4 hours</li>
+        <li>Monthly IT strategy report</li>
       </ul>
-      <a href="#contact" class="plan-btn">Get Started</a>
+      <a href="#contact" class="plan-btn">Get Shield Pro</a>
     </div>
 
-    <div class="plan-card reveal">
-      <div class="plan-name">Enterprise</div>
-      <div class="plan-price" style="font-size:1.8rem; line-height:1.4; color: var(--text-dim);">Custom</div>
+    <div class="plan-card">
+      <div class="plan-name">Shield Elite</div>
+      <div class="plan-price"><sup>€</sup>699<sub>/mo</sub></div>
       <div class="plan-divider"></div>
+      <div class="plan-coverage">🔴 Full Protection</div>
       <ul class="plan-features">
-        <li>Unlimited workstations</li>
+        <li>Unlimited devices covered</li>
+        <li>Unlimited on-site visits</li>
+        <li>24/7 priority support</li>
         <li>Dedicated account manager</li>
-        <li>Custom security protocols</li>
-        <li>Multi-site infrastructure</li>
-        <li>AI & automation consulting</li>
-        <li>1-hour emergency SLA</li>
+        <li>Zero-trust cybersecurity</li>
+        <li>Cloud backup (2 TB)</li>
+        <li>Response within 1 hour</li>
+        <li>Weekly strategy calls</li>
+        <li>Hardware replacement service</li>
       </ul>
-      <a href="#contact" class="plan-btn">Talk to Sales</a>
+      <a href="#contact" class="plan-btn">Get Shield Elite</a>
     </div>
+
   </div>
 </section>
 
