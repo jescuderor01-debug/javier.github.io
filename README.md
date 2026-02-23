@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,14 +7,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #030712;
-    --surface: #0d1117;
-    --border: rgba(0,255,200,0.12);
-    --accent: #00ffc8;
-    --accent2: #0099ff;
-    --muted: #4a5568;
-    --text: #e2e8f0;
-    --text-dim: #718096;
+    --bg: #0a0602;
+    --surface: #120d07;
+    --border: rgba(255,140,0,0.14);
+    --accent: #ff8c00;
+    --accent2: #ff4500;
+    --muted: #4a3d2a;
+    --text: #f0e6d2;
+    --text-dim: #8a7560;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,7 +47,7 @@
     padding: 1.2rem 6vw;
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
-    background: rgba(3,7,18,0.7);
+    background: rgba(10,6,2,0.85);
   }
 
   .logo {
@@ -86,6 +86,49 @@
   .nav-cta:hover {
     background: var(--accent) !important;
     color: var(--bg) !important;
+  }
+
+  nav a.active { color: var(--accent); }
+
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  @media (max-width: 820px) {
+    .hamburger { display: flex; z-index: 110; }
+    nav ul {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      background: rgba(10,6,2,0.97);
+      backdrop-filter: blur(20px);
+      z-index: 105;
+    }
+    nav ul.open { display: flex; }
+    nav ul a { font-size: 1.2rem; }
+    .nav-cta { padding: 0.75rem 2rem; font-size: 1rem; }
   }
 
   /* ── HERO ── */
@@ -165,11 +208,11 @@
     border-radius: 4px;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 0 24px rgba(0,255,200,0.3);
+    box-shadow: 0 0 24px rgba(255,140,0,0.3);
   }
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 40px rgba(0,255,200,0.5);
+    box-shadow: 0 0 40px rgba(255,140,0,0.5);
   }
 
   .btn-ghost {
@@ -194,9 +237,9 @@
     max-width: 700px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 35%, #1a3a5c, #030712 70%);
-    border: 1px solid rgba(0,153,255,0.15);
-    box-shadow: 0 0 80px rgba(0,153,255,0.1), inset 0 0 60px rgba(0,255,200,0.04);
+    background: radial-gradient(circle at 35% 35%, #3a1a00, #0a0602 70%);
+    border: 1px solid rgba(255,140,0,0.15);
+    box-shadow: 0 0 80px rgba(255,100,0,0.1), inset 0 0 60px rgba(255,140,0,0.04);
     overflow: hidden;
     z-index: -1;
     animation: planetSpin 60s linear infinite;
@@ -213,7 +256,7 @@
     top: 10%; left: 15%;
     width: 30%; height: 20%;
     border-radius: 50%;
-    background: rgba(0,153,255,0.2);
+    background: rgba(255,100,0,0.2);
     filter: blur(30px);
   }
 
@@ -307,7 +350,7 @@
   .svc-icon {
     width: 48px; height: 48px;
     border-radius: 10px;
-    background: linear-gradient(135deg, rgba(0,255,200,0.12), rgba(0,153,255,0.08));
+    background: linear-gradient(135deg, rgba(255,140,0,0.12), rgba(255,69,0,0.08));
     display: flex; align-items: center; justify-content: center;
     font-size: 1.4rem;
     margin-bottom: 1.25rem;
@@ -352,7 +395,7 @@
     width: 100%;
     height: 100%;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background: linear-gradient(135deg, rgba(0,255,200,0.08), rgba(0,153,255,0.12));
+    background: linear-gradient(135deg, rgba(255,140,0,0.08), rgba(255,69,0,0.12));
     border: 1px solid var(--border);
     animation: morphBlob 8s ease-in-out infinite;
     display: flex;
@@ -412,7 +455,7 @@
 
   .plan-card.featured {
     border-color: var(--accent);
-    box-shadow: 0 0 40px rgba(0,255,200,0.1);
+    box-shadow: 0 0 40px rgba(255,140,0,0.1);
   }
 
   .plan-badge {
@@ -579,7 +622,7 @@
     letter-spacing: 0.15em;
     cursor: pointer;
     transition: opacity 0.2s, transform 0.2s;
-    box-shadow: 0 0 24px rgba(0,255,200,0.25);
+    box-shadow: 0 0 24px rgba(255,140,0,0.25);
   }
   .form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
 
@@ -658,13 +701,73 @@
     z-index: 9999;
   }
 
+  /* ── FAQ ── */
+  .faq-list {
+    margin-top: 3rem;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .faq-item { background: var(--surface); }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.2s;
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-question:hover { background: rgba(255,140,0,0.04); }
+  .faq-item.open .faq-question { color: var(--accent); }
+
+  .faq-icon {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.2rem;
+    color: var(--accent);
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    line-height: 1;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 2rem;
+  }
+  .faq-answer p {
+    padding: 1.25rem 0;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  .faq-item.open .faq-answer { max-height: 300px; padding: 0 2rem; }
+
   /* Grid decoration */
   .grid-bg {
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(0,255,200,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,255,200,0.03) 1px, transparent 1px);
+      linear-gradient(rgba(255,140,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,140,0,0.03) 1px, transparent 1px);
     background-size: 60px 60px;
     z-index: 0;
     pointer-events: none;
@@ -678,11 +781,16 @@
 <!-- NAV -->
 <nav>
   <div class="logo">Tech<span>Planet</span></div>
-  <ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Us</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+    <li><a href="#prices">Prices</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
 
@@ -791,7 +899,7 @@
 </section>
 
 <!-- PRICING -->
-<section id="pricing">
+<section id="prices">
   <div class="section-tag">Plans & Pricing</div>
   <h2 class="section-title">Simple, Transparent Pricing</h2>
   <p class="section-desc">No hidden fees. No surprises. Choose the plan that fits your orbit.</p>
@@ -886,6 +994,77 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq" style="background: rgba(13,17,23,0.5);">
+  <div class="section-tag">FAQ</div>
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <p class="section-desc">Everything you need to know before working with us.</p>
+
+  <div class="faq-list reveal">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What types of businesses do you work with?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>We work with businesses of all sizes — from startups to large enterprises — across sectors including finance, healthcare, logistics, retail, and manufacturing. If your business depends on technology, we can help.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How quickly can you respond to a critical IT issue?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Our response times depend on your plan. Professional clients benefit from a 2-hour SLA, while Enterprise clients get a 1-hour emergency response — available 24/7/365. Starter plan clients receive same-day response during business hours.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do you offer on-site support or is everything remote?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>We offer both. The majority of issues are resolved remotely for speed and efficiency. However, for hardware installations, network setup, and complex incidents, our engineers can attend your site in person.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I switch plans as my company grows?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Absolutely. Our plans are designed to scale with you. You can upgrade at any time with no penalties, and our team will manage the transition seamlessly to ensure zero disruption to your operations.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How do you handle data security and privacy?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Security is at the core of everything we do. We follow ISO 27001 practices, implement end-to-end encryption, conduct regular audits, and are fully GDPR compliant. All client data is handled with strict confidentiality.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is there a minimum contract length?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Our standard managed service agreements run on a 12-month basis, which allows us to plan proactively for your infrastructure. However, we also offer flexible month-to-month options — contact us to discuss what works best for you.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-tag">Get In Touch</div>
@@ -907,11 +1086,12 @@
 <footer>
   <div class="footer-logo">Tech<span>Planet</span></div>
   <ul class="footer-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Us</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms</a></li>
+    <li><a href="#prices">Prices</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="footer-copy">© 2025 TechPlanet Ltd. All rights reserved.</div>
 </footer>
@@ -945,7 +1125,7 @@
       const alpha = s.opacity * (0.6 + 0.4 * Math.sin(s.twinkle));
       ctx.beginPath();
       ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(200,230,255,${alpha})`;
+      ctx.fillStyle = `rgba(255,220,180,${alpha})`;
       ctx.fill();
       s.y -= s.speed;
       if (s.y < 0) { s.y = canvas.height; s.x = Math.random() * canvas.width; }
@@ -990,12 +1170,50 @@
   }, { threshold: 0.5 });
   statNums.forEach(el => countObs.observe(el));
 
+  // ── HAMBURGER MENU ──
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+  });
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+    });
+  });
+
+  // ── ACTIVE NAV ON SCROLL ──
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const scrollSpy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => scrollSpy.observe(s));
+
+  // ── FAQ ACCORDION ──
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
   // ── FORM ──
   function handleSubmit(e) {
     e.preventDefault();
     const btn = e.target.querySelector('.form-submit');
     btn.textContent = 'MESSAGE SENT ✦';
-    btn.style.background = '#00cc99';
+    btn.style.background = '#e07000';
     setTimeout(() => {
       btn.textContent = 'SEND MESSAGE ›';
       btn.style.background = '';
