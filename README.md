@@ -122,12 +122,11 @@
   #hero {
     position: relative;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 9rem 2rem 14rem;
+    gap: 4rem;
+    padding: 8rem max(6vw, 40px) 6rem;
     z-index: 1;
     overflow: hidden;
   }
@@ -136,13 +135,13 @@
   #hero::before {
     content: '';
     position: absolute;
-    bottom: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 70vw;
-    height: 55vh;
-    background: radial-gradient(ellipse at 50% 100%,
-      rgba(255,80,0,0.13) 0%,
-      rgba(255,60,0,0.06) 45%,
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 55vw;
+    height: 90vh;
+    background: radial-gradient(ellipse at 70% 50%,
+      rgba(255,80,0,0.1) 0%,
+      rgba(255,60,0,0.04) 50%,
       transparent 70%);
     pointer-events: none;
     z-index: 0;
@@ -159,10 +158,15 @@
   }
 
   .hero-content {
-    max-width: 1100px;
+    max-width: 640px;
     position: relative;
     z-index: 2;
+    text-align: left;
   }
+
+  .hero-btns { justify-content: flex-start; }
+
+  .hero-sub { margin-left: 0; margin-right: 0; }
 
   .hero-badge {
     display: inline-flex;
@@ -271,27 +275,19 @@
 
   /* ── PLANET ── */
   .planet-wrap {
-    position: absolute;
-    bottom: -18vw;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 52vw;
-    max-width: 640px;
-    min-width: 280px;
+    position: relative;
+    width: 100%;
+    max-width: 580px;
     aspect-ratio: 1;
     z-index: 1;
     pointer-events: none;
+    justify-self: center;
   }
 
   .planet-wrap svg {
     width: 100%;
     height: 100%;
-    filter: drop-shadow(0 0 40px rgba(255,120,0,0.35)) drop-shadow(0 0 80px rgba(255,80,0,0.15));
-  }
-
-  @keyframes planetFloat {
-    0%, 100% { transform: translateX(-50%) translateY(0px); }
-    50% { transform: translateX(-50%) translateY(-14px); }
+    filter: drop-shadow(0 0 50px rgba(255,120,0,0.4)) drop-shadow(0 0 100px rgba(255,80,0,0.2));
   }
 
   /* ── STATS ── */
@@ -445,7 +441,7 @@
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
-  @media (max-width: 768px) { #about { grid-template-columns: 1fr; gap: 3rem; } }
+  /* about handled in 640px block */
 
   .about-visual {
     position: relative;
@@ -873,16 +869,29 @@
 
   /* Large Desktop (≥ 1440px) */
   @media (min-width: 1440px) {
-    section { padding: 8rem max(7vw, 80px); }
-    #stats { padding: 0 max(7vw, 80px); }
-    nav { padding: 1.2rem max(7vw, 80px); }
-    footer { padding: 3rem max(7vw, 80px); }
+    section { padding: 8rem max(8vw, 100px); }
+    #hero { padding: 8rem max(8vw, 100px); gap: 6rem; }
+    #stats { padding: 0 max(8vw, 100px); }
+    nav { padding: 1.2rem max(8vw, 100px); }
+    footer { padding: 3rem max(8vw, 100px); }
     .service-card { padding: 2.75rem; }
     .plan-card { padding: 2.75rem; }
-    h1 { font-size: clamp(3rem, 7vw, 7rem); }
+    h1 { font-size: clamp(3rem, 5vw, 5.5rem); }
     .stat-num { font-size: 3.5rem; }
   }
+
+  /* Tablet (≤ 1024px) — hero goes single column */
   @media (max-width: 1024px) {
+    #hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 8rem max(5vw, 24px) 5rem;
+      gap: 3rem;
+    }
+    .hero-content { max-width: 680px; margin: 0 auto; text-align: center; }
+    .hero-sub { margin-left: auto; margin-right: auto; }
+    .hero-btns { justify-content: center; }
+    .planet-wrap { max-width: 420px; margin: 0 auto; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .plans-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
     .testi-grid { grid-template-columns: 1fr 1fr; }
@@ -896,6 +905,7 @@
     .footer-links { gap: 1.25rem; }
   }
   @media (max-width: 640px) {
+    #hero { padding: 7rem 4vw 4rem; gap: 2.5rem; }
     section { padding: 3.5rem 4vw; }
     #stats { grid-template-columns: 1fr 1fr; padding: 0 4vw; }
     .stat { padding: 1.75rem 0.5rem; }
@@ -904,9 +914,9 @@
     .hero-sub { font-size: 0.92rem; }
     .hero-btns { flex-direction: column; align-items: center; }
     .btn-primary, .btn-ghost { width: 100%; max-width: 290px; text-align: center; }
-    .planet-wrap { width: 90vw; bottom: -20vw; }
+    .planet-wrap { max-width: 300px; }
     .about-visual { max-width: 260px; margin: 0 auto; }
-    .about-orb { font-size: 3.5rem; }
+    #about { grid-template-columns: 1fr; gap: 3rem; }
     .services-grid { grid-template-columns: 1fr; }
     .service-card { padding: 1.75rem; }
     .plans-grid { grid-template-columns: 1fr; }
@@ -1014,10 +1024,6 @@
         </filter>
       </defs>
     </svg>
-  </div>
-  <div class="scroll-hint">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
   </div>
 </section>
 
