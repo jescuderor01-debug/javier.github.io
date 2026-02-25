@@ -1,24 +1,27 @@
-<html lang="en-US"><head>
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>javier.github.io</title>
-<meta name="generator" content="Jekyll v3.10.0">
-<meta property="og:title" content="javier.github.io">
-<meta property="og:locale" content="en_US">
-<link rel="canonical" href="https://jescuderor01-debug.github.io/javier.github.io/">
-<meta property="og:url" content="https://jescuderor01-debug.github.io/javier.github.io/">
-<meta property="og:site_name" content="javier.github.io">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="javier.github.io">
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="javier.github.io" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://jescuderor01-debug.github.io/javier.github.io/" />
+<meta property="og:url" content="https://jescuderor01-debug.github.io/javier.github.io/" />
+<meta property="og:site_name" content="javier.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="javier.github.io" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","headline":"javier.github.io","name":"javier.github.io","url":"https://jescuderor01-debug.github.io/javier.github.io/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <style class="anchorjs"></style><link rel="stylesheet" href="/javier.github.io/assets/css/style.css?v=91f1690a210adf1030e33c5371075a7161b67c6f">
+    <link rel="stylesheet" href="/javier.github.io/assets/css/style.css?v=91f1690a210adf1030e33c5371075a7161b67c6f">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -30,192 +33,20 @@
 
 <!-- end custom head snippets -->
 
-  <style id="highlighty-scrollbar-style">
-      .highlighty-scrollbar-marker {
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        background-color: rgba(255, 204, 0, 0.7);
-        border-radius: 2px;
-        cursor: pointer;
-        transition: opacity 0.2s ease, width 0.2s ease, transform 0.2s ease;
-        /* Add a subtle border to ensure visibility for light colors */
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-      }
-      .highlighty-scrollbar-marker:hover {
-        opacity: 1;
-        width: 12px;
-        transform: translateX(-2px);
-      }
-    </style><style id="highlighty-text-decoration-fallbacks">
-    /* Basic fallbacks for all decoration types - using individual properties instead of shorthand */
-    hility[data-decoration-type="underline"] {
-      text-decoration-line: underline !important;
-      text-decoration-thickness: var(--decoration-thickness, 2px) !important;
-      background: transparent !important;
-    }
-
-    hility[data-decoration-type="overline"] {
-      text-decoration-line: overline !important;
-      text-decoration-thickness: var(--decoration-thickness, 2px) !important;
-      background: transparent !important;
-    }
-
-    hility[data-decoration-type="line-through"] {
-      text-decoration-line: line-through !important;
-      text-decoration-thickness: var(--decoration-thickness, 2px) !important;
-      background: transparent !important;
-    }
-
-    /* Thickness-specific styles */
-    hility[data-decoration-type][style*="--decoration-thickness: 1px"] {
-      text-decoration-thickness: 1px !important;
-    }
-
-    hility[data-decoration-type][style*="--decoration-thickness: 2px"] {
-      text-decoration-thickness: 2px !important;
-    }
-
-    hility[data-decoration-type][style*="--decoration-thickness: 3px"] {
-      text-decoration-thickness: 3px !important;
-    }
-
-    hility[data-decoration-type][style*="--decoration-thickness: 4px"] {
-      text-decoration-thickness: 4px !important;
-    }
-
-    hility[data-decoration-type][style*="--decoration-thickness: 5px"] {
-      text-decoration-thickness: 5px !important;
-    }
-
-    /* Fallbacks for browsers that don't support text-decoration-style */
-    @supports not (text-decoration-style: dotted) {
-      hility[data-decoration-type="dotted-underline"] {
-        border-bottom-style: dotted !important;
-        border-bottom-width: var(--decoration-thickness, 2px) !important;
-        text-decoration: none !important;
-      }
-
-      hility[data-decoration-type="wavy-underline"] {
-        border-bottom-style: solid !important;
-        border-bottom-width: var(--decoration-thickness, 2px) !important;
-        text-decoration: none !important;
-      }
-
-      hility[data-decoration-type="double-underline"] {
-        border-bottom-style: double !important;
-        border-bottom-width: var(--decoration-thickness, 3px) !important;
-        text-decoration: none !important;
-      }
-    }
-
-    /* Styles for browsers that do support text-decoration-style */
-    @supports (text-decoration-style: dotted) {
-      hility[data-decoration-type="dotted-underline"] {
-        text-decoration-line: underline !important;
-        text-decoration-style: dotted !important;
-        text-decoration-thickness: var(--decoration-thickness, 2px) !important;
-        background: transparent !important;
-      }
-
-      hility[data-decoration-type="wavy-underline"] {
-        text-decoration-line: underline !important;
-        text-decoration-style: wavy !important;
-        text-decoration-thickness: var(--decoration-thickness, 2px) !important;
-        background: transparent !important;
-      }
-
-      hility[data-decoration-type="double-underline"] {
-        text-decoration-line: underline !important;
-        text-decoration-style: double !important;
-        text-decoration-thickness: var(--decoration-thickness, 3px) !important;
-        background: transparent !important;
-      }
-    }
-
-    /* Color-specific rules for each query item */
-    
-  </style><style type="text/css" id="hility-css">
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes disappear {
-  from {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-}
-
-.appear {
-  animation-name: appear;
-}
-
-.disappear {
-  animation-name: disappear;
-}
-
-hility-success,
-hility-error {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  width: auto;
-  min-height: 28px;
-  -webkit-margin-start: auto;
-  -webkit-margin-end: auto;
-  border-radius: 0.5rem;
-  color: white;
-  padding: 8px;
-  font-size: 13px;
-  top: 15px;
-  z-index: 9999;
-  cursor: pointer;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-  max-width: 45%;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
-  word-break: break-all;
-}
-
-hility-success {
-  background: rgba(56, 161, 105, 0.97);
-  left: 20px;
-}
-
-hility-error {
-  background: rgba(229, 62, 62, 0.97);
-  right: 20px;
-}
-
-</style></head>
+  </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body" style="
-    height: 9000000px;
-">
+    <div class="container-lg px-3 my-5 markdown-body">
       
       <h1><a href="https://jescuderor01-debug.github.io/javier.github.io/">javier.github.io</a></h1>
       
 
-      
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TechPlanet — IT Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet" />
 <style>
   :root {
     --bg: #00000000;
@@ -1137,10 +968,10 @@ hility-error {
     .plan-card { padding: 1.5rem 1.1rem; }
   }
 </style>
+</head>
+<body>
 
-
-
-<canvas id="starfield" width="1365" height="911"></canvas>
+<canvas id="starfield"></canvas>
 
 <!-- NAV -->
 <nav>
@@ -1149,11 +980,11 @@ hility-error {
     <span></span><span></span><span></span>
   </button>
   <ul id="nav-menu">
-    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#hero">Home</a></li>
     <li><a href="#about">About Us</a></li>
-    <li><a href="#services" class="">Services</a></li>
-    <li><a href="#prices" class="">Prices</a></li>
-    <li><a href="#faq" class="">FAQ</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#prices">Prices</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
@@ -1163,7 +994,7 @@ hility-error {
   <div class="grid-bg"></div>
   <div class="hero-content">
     <div class="hero-badge"><span class="hero-badge-dot"></span>NEXT-GEN IT SOLUTIONS</div>
-    <h1>Your universe of<br><em>technological</em><br>solutions</h1>
+    <h1>Your universe of<br /><em>technological</em><br />solutions</h1>
     <p class="hero-sub">TechPlanet delivers cutting-edge IT services, cybersecurity, cloud infrastructure, and custom software development that propels your business into the future.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">Launch Your Project</a>
@@ -1174,53 +1005,53 @@ hility-error {
     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none">
       <defs>
         <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="rgba(255,140,0,0.08)"></stop>
-          <stop offset="100%" stop-color="rgba(255,60,0,0)"></stop>
+          <stop offset="0%" stop-color="rgba(255,140,0,0.08)" />
+          <stop offset="100%" stop-color="rgba(255,60,0,0)" />
         </radialGradient>
         <clipPath id="circleClip">
-          <circle cx="200" cy="200" r="155"></circle>
+          <circle cx="200" cy="200" r="155" />
         </clipPath>
         <!-- Spinning orbit animation gradient -->
         <linearGradient id="orbitGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="rgba(255,100,0,0)"></stop>
-          <stop offset="40%" stop-color="rgba(255,140,0,0.9)"></stop>
-          <stop offset="60%" stop-color="rgba(255,100,0,0.9)"></stop>
-          <stop offset="100%" stop-color="rgba(255,100,0,0)"></stop>
+          <stop offset="0%" stop-color="rgba(255,100,0,0)" />
+          <stop offset="40%" stop-color="rgba(255,140,0,0.9)" />
+          <stop offset="60%" stop-color="rgba(255,100,0,0.9)" />
+          <stop offset="100%" stop-color="rgba(255,100,0,0)" />
         </linearGradient>
         <linearGradient id="orbitGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="rgba(255,100,0,0)"></stop>
-          <stop offset="35%" stop-color="rgba(255,120,0,0.7)"></stop>
-          <stop offset="65%" stop-color="rgba(230,80,0,0.7)"></stop>
-          <stop offset="100%" stop-color="rgba(255,100,0,0)"></stop>
+          <stop offset="0%" stop-color="rgba(255,100,0,0)" />
+          <stop offset="35%" stop-color="rgba(255,120,0,0.7)" />
+          <stop offset="65%" stop-color="rgba(230,80,0,0.7)" />
+          <stop offset="100%" stop-color="rgba(255,100,0,0)" />
         </linearGradient>
       </defs>
 
       <!-- Background glow -->
-      <circle cx="200" cy="200" r="195" fill="url(#globeGlow)"></circle>
+      <circle cx="200" cy="200" r="195" fill="url(#globeGlow)" />
 
       <!-- Outer circle (globe border) -->
-      <circle cx="200" cy="200" r="155" stroke="rgba(255,140,0,0.75)" stroke-width="2.5"></circle>
+      <circle cx="200" cy="200" r="155" stroke="rgba(255,140,0,0.75)" stroke-width="2.5" />
 
       <!-- Meridian lines clipped inside globe -->
       <g clip-path="url(#circleClip)" stroke="rgba(255,140,0,0.55)" stroke-width="2" fill="none">
         <!-- Vertical meridians (longitude lines) -->
-        <ellipse cx="200" cy="200" rx="50" ry="155"></ellipse>
-        <ellipse cx="200" cy="200" rx="105" ry="155"></ellipse>
+        <ellipse cx="200" cy="200" rx="50" ry="155" />
+        <ellipse cx="200" cy="200" rx="105" ry="155" />
         <!-- Horizontal parallels (latitude lines) -->
-        <ellipse cx="200" cy="200" rx="155" ry="52"></ellipse>
-        <ellipse cx="200" cy="200" rx="155" ry="108"></ellipse>
+        <ellipse cx="200" cy="200" rx="155" ry="52" />
+        <ellipse cx="200" cy="200" rx="155" ry="108" />
       </g>
 
       <!-- Equator highlight -->
-      <ellipse cx="200" cy="200" rx="155" ry="52" stroke="rgba(255,100,0,0.9)" stroke-width="2.5" fill="none" clip-path="url(#circleClip)"></ellipse>
+      <ellipse cx="200" cy="200" rx="155" ry="52" stroke="rgba(255,100,0,0.9)" stroke-width="2.5" fill="none" clip-path="url(#circleClip)" />
 
       <!-- Single horizontal orbit, slightly tilted -->
-      <ellipse cx="200" cy="200" rx="195" ry="42" stroke="rgba(255,130,0,0.9)" stroke-width="3.5" fill="none" stroke-dasharray="0" transform="rotate(-8 200 200)" filter="url(#dotGlow)"></ellipse>
+      <ellipse cx="200" cy="200" rx="195" ry="42" stroke="rgba(255,130,0,0.9)" stroke-width="3.5" fill="none" stroke-dasharray="0" transform="rotate(-8 200 200)" filter="url(#dotGlow)" />
 
       <defs>
         <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
-          <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
-          <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+          <feGaussianBlur stdDeviation="4" result="blur" />
+          <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
         </filter>
       </defs>
     </svg>
@@ -1229,20 +1060,20 @@ hility-error {
 
 <!-- STATS -->
 <div id="stats">
-  <div class="stat reveal visible">
-    <div class="stat-num" data-target="340">340+</div>
+  <div class="stat reveal">
+    <div class="stat-num" data-target="340">0</div>
     <div class="stat-label">Clients Worldwide</div>
   </div>
-  <div class="stat reveal visible">
-    <div class="stat-num" data-target="12">12+</div>
+  <div class="stat reveal">
+    <div class="stat-num" data-target="12">0</div>
     <div class="stat-label">Years of Experience</div>
   </div>
-  <div class="stat reveal visible">
-    <div class="stat-num" data-target="99">99%</div>
+  <div class="stat reveal">
+    <div class="stat-num" data-target="99">0</div>
     <div class="stat-label">% Uptime SLA</div>
   </div>
-  <div class="stat reveal visible">
-    <div class="stat-num" data-target="48">48+</div>
+  <div class="stat reveal">
+    <div class="stat-num" data-target="48">0</div>
     <div class="stat-label">Hour Response</div>
   </div>
 </div>
@@ -1250,44 +1081,44 @@ hility-error {
 <!-- SERVICES -->
 <section id="services">
   <div class="section-eyebrow"><span class="section-tag">What We Do</span></div>
-  <h2 class="section-title" id="mission-critical-it-services">Mission-Critical IT Services<a class="anchorjs-link " href="#mission-critical-it-services" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <h2 class="section-title">Mission-Critical IT Services</h2>
   <p class="section-desc">From managed infrastructure to bespoke software, we handle the tech so you can focus on what matters.</p>
 
-  <div class="services-grid reveal visible">
+  <div class="services-grid reveal">
     <div class="service-card">
       <!-- Cybersecurity -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-      <h3 id="cybersecurity">Cybersecurity<a class="anchorjs-link " href="#cybersecurity" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
+      <h3>Cybersecurity</h3>
       <p>Advanced threat detection, penetration testing, and zero-trust architecture to keep your systems impenetrable.</p>
     </div>
     <div class="service-card">
       <!-- Cloud -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg></div>
-      <h3 id="cloud-solutions">Cloud Solutions<a class="anchorjs-link " href="#cloud-solutions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" /></svg></div>
+      <h3>Cloud Solutions</h3>
       <p>Scalable AWS, Azure, and GCP deployments engineered for performance, resilience, and cost efficiency.</p>
     </div>
     <div class="service-card">
       <!-- Custom Software -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path><polyline points="9 11 12 8 15 11"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></div>
-      <h3 id="custom-software">Custom Software<a class="anchorjs-link " href="#custom-software" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /><polyline points="9 11 12 8 15 11" /><line x1="12" y1="8" x2="12" y2="16" /></svg></div>
+      <h3>Custom Software</h3>
       <p>End-to-end development of web apps, APIs, and internal tools built precisely to your requirements.</p>
     </div>
     <div class="service-card">
       <!-- IT Support -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
-      <h3 id="it-support-managed">IT Support &amp; Managed<a class="anchorjs-link " href="#it-support-managed" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div>
+      <h3>IT Support &amp; Managed</h3>
       <p>24/7 helpdesk, proactive monitoring, and on-site support so your operations never skip a beat.</p>
     </div>
     <div class="service-card">
       <!-- Network -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-      <h3 id="network-infrastructure">Network Infrastructure<a class="anchorjs-link " href="#network-infrastructure" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg></div>
+      <h3>Network Infrastructure</h3>
       <p>Enterprise-grade LAN/WAN design, SD-WAN, and VPN solutions optimized for speed and reliability.</p>
     </div>
     <div class="service-card">
       <!-- AI & Automation -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="15" x2="8" y2="15"></line><line x1="16" y1="15" x2="16" y2="15"></line><path d="M6 11V9a6 6 0 0 1 12 0v2"></path></svg></div>
-      <h3 id="ai-automation">AI &amp; Automation<a class="anchorjs-link " href="#ai-automation" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4" /><line x1="8" y1="15" x2="8" y2="15" /><line x1="16" y1="15" x2="16" y2="15" /><path d="M6 11V9a6 6 0 0 1 12 0v2" /></svg></div>
+      <h3>AI &amp; Automation</h3>
       <p>Integrate machine learning pipelines and RPA workflows that slash costs and boost productivity.</p>
     </div>
   </div>
@@ -1295,12 +1126,12 @@ hility-error {
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="about-visual reveal visible">
-    <div class="about-orb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="width:45%;height:45%;color:var(--accent)"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+  <div class="about-visual reveal">
+    <div class="about-orb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="width:45%;height:45%;color:var(--accent)"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg></div>
   </div>
-  <div class="reveal visible">
+  <div class="reveal">
     <div class="section-eyebrow"><span class="section-tag">About TechPlanet</span></div>
-    <h2 class="section-title" id="were-the-it-partner-youve-been-searching-for">We're the IT Partner You've Been Searching For<a class="anchorjs-link " href="#were-the-it-partner-youve-been-searching-for" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    <h2 class="section-title">We're the IT Partner You've Been Searching For</h2>
     <p class="section-desc">Founded in 2013, TechPlanet has grown from a small IT consultancy into a full-spectrum technology partner serving clients across Europe and North America.</p>
     <div class="feature-list">
       <div class="feature-item">
@@ -1322,12 +1153,12 @@ hility-error {
 <!-- PRICING -->
 <section id="prices">
   <div class="section-eyebrow"><span class="section-tag">Plans &amp; Pricing</span></div>
-  <h2 class="section-title" id="simple-transparent-pricing">Simple, Transparent Pricing<a class="anchorjs-link " href="#simple-transparent-pricing" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <h2 class="section-title">Simple, Transparent Pricing</h2>
   <p class="section-desc">No hidden fees. No surprises. Choose the plan that fits your orbit.</p>
 
-  <div class="price-table reveal visible">
+  <div class="price-table reveal">
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div>
       <div class="price-info">
         <div class="price-name">Equipment Repair</div>
         <div class="price-desc">Diagnosis and full repair of hardware components and devices</div>
@@ -1336,7 +1167,7 @@ hility-error {
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line><polyline points="8 10 12 14 16 10"></polyline><line x1="12" y1="7" x2="12" y2="14"></line></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /><polyline points="8 10 12 14 16 10" /><line x1="12" y1="7" x2="12" y2="14" /></svg></div>
       <div class="price-info">
         <div class="price-name">Software Installation</div>
         <div class="price-desc">Professional setup and configuration of any software or OS</div>
@@ -1345,7 +1176,7 @@ hility-error {
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg></div>
       <div class="price-info">
         <div class="price-name">Equipment Maintenance</div>
         <div class="price-desc">Preventive cleaning, updates and performance checks</div>
@@ -1354,7 +1185,7 @@ hility-error {
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line><polyline points="9 8 12 5 15 8"></polyline><line x1="12" y1="5" x2="12" y2="15"></line></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /><polyline points="9 8 12 5 15 8" /><line x1="12" y1="5" x2="12" y2="15" /></svg></div>
       <div class="price-info">
         <div class="price-name">Equipment Installation</div>
         <div class="price-desc">Setup and connection of new hardware, printers and peripherals</div>
@@ -1363,7 +1194,7 @@ hility-error {
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /><line x1="11" y1="8" x2="11" y2="14" /><line x1="8" y1="11" x2="14" y2="11" /></svg></div>
       <div class="price-info">
         <div class="price-name">Software Troubleshooting</div>
         <div class="price-desc">Diagnosing and fixing errors, crashes and system issues</div>
@@ -1372,7 +1203,7 @@ hility-error {
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" /></svg></div>
       <div class="price-info">
         <div class="price-name">Virus Removal</div>
         <div class="price-desc">Complete malware scan, removal and system protection setup</div>
@@ -1383,13 +1214,13 @@ hility-error {
   </div>
 
   <!-- MONTHLY PLANS -->
-  <div class="plans-title reveal visible">
+  <div class="plans-title reveal">
     <div class="section-eyebrow" style="margin-top: 5rem;"><span class="section-tag">Monthly Business Plans</span></div>
-    <h3 class="section-title" id="it-protection-plans-for-companies">IT Protection Plans for Companies<a class="anchorjs-link " href="#it-protection-plans-for-companies" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    <h3 class="section-title">IT Protection Plans for Companies</h3>
     <p class="section-desc">Keep your business covered every month with proactive support, guaranteed response times and full IT protection tailored to your size.</p>
   </div>
 
-  <div class="plans-grid reveal visible">
+  <div class="plans-grid reveal">
 
     <div class="plan-card">
       <div class="plan-name">Shield Basic</div>
@@ -1452,10 +1283,10 @@ hility-error {
 <!-- TESTIMONIALS -->
 <section id="testimonials" style="background: rgba(6,6,6,0.97);">
   <div class="section-eyebrow"><span class="section-tag">Client Stories</span></div>
-  <h2 class="section-title" id="trusted-by-teams-that-cant-afford-downtime">Trusted by Teams That Can't Afford Downtime<a class="anchorjs-link " href="#trusted-by-teams-that-cant-afford-downtime" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <h2 class="section-title">Trusted by Teams That Can't Afford Downtime</h2>
 
   <div class="testi-grid">
-    <div class="testi-card reveal visible">
+    <div class="testi-card reveal">
       <div class="testi-stars">★★★★★</div>
       <p class="testi-text">"TechPlanet migrated our entire infrastructure to the cloud with zero downtime. The team's expertise and communication were exceptional throughout."</p>
       <div class="testi-author">
@@ -1466,7 +1297,7 @@ hility-error {
         </div>
       </div>
     </div>
-    <div class="testi-card reveal visible">
+    <div class="testi-card reveal">
       <div class="testi-stars">★★★★★</div>
       <p class="testi-text">"Their cybersecurity team identified vulnerabilities our previous auditor missed entirely. We feel genuinely secure for the first time."</p>
       <div class="testi-author">
@@ -1477,7 +1308,7 @@ hility-error {
         </div>
       </div>
     </div>
-    <div class="testi-card reveal visible">
+    <div class="testi-card reveal">
       <div class="testi-stars">★★★★★</div>
       <p class="testi-text">"Response times are incredible. A critical server issue at 3am was resolved within 90 minutes. The Professional plan pays for itself every month."</p>
       <div class="testi-author">
@@ -1494,10 +1325,10 @@ hility-error {
 <!-- FAQ -->
 <section id="faq" style="background: rgba(6,6,6,0.97);">
   <div class="section-eyebrow"><span class="section-tag">FAQ</span></div>
-  <h2 class="section-title" id="frequently-asked-questions">Frequently Asked Questions<a class="anchorjs-link " href="#frequently-asked-questions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <h2 class="section-title">Frequently Asked Questions</h2>
   <p class="section-desc">Everything you need to know before working with us.</p>
 
-  <div class="faq-list reveal visible">
+  <div class="faq-list reveal">
 
     <div class="faq-item">
       <button class="faq-question">
@@ -1565,15 +1396,15 @@ hility-error {
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-eyebrow" style="justify-content: center;"><span class="section-tag">Get In Touch</span></div>
-  <h2 class="section-title" id="ready-to-elevate-your-technology">Ready to Elevate Your Technology?<a class="anchorjs-link " href="#ready-to-elevate-your-technology" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+  <h2 class="section-title">Ready to Elevate Your Technology?</h2>
   <p class="section-desc">Tell us about your project and our team will get back to you within 24 hours.</p>
 
-  <form class="contact-form reveal visible" onsubmit="handleSubmit(event)">
+  <form class="contact-form reveal" onsubmit="handleSubmit(event)">
     <div class="form-row">
-      <input type="text" placeholder="Your name" required="">
-      <input type="email" placeholder="Email address" required="">
+      <input type="text" placeholder="Your name" required="" />
+      <input type="email" placeholder="Email address" required="" />
     </div>
-    <input type="text" placeholder="Company name">
+    <input type="text" placeholder="Company name" />
     <textarea placeholder="Describe your IT needs or challenges..."></textarea>
     <button type="submit" class="form-submit">SEND MESSAGE ›</button>
   </form>
@@ -1728,14 +1559,13 @@ hility-error {
     }, 3000);
   }
 </script>
-
-
+</body>
+</html>
 
 
       
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
-  
-
-<div class="highlighty-scrollbar-highlighter" style="position: fixed; right: 0px; top: 0px; width: 8px; height: 100%; pointer-events: auto; z-index: 9999; background-color: transparent;"></div></body></html>
+  </body>
+</html>
