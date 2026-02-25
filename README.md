@@ -136,7 +136,7 @@
     @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-8px)} }
 
     /* SECTIONS COMMON */
-    section { padding: 120px 24px; }
+    section { padding: 80px 24px; }
     .section-label {
       display: inline-flex; align-items: center; gap: 8px;
       color: var(--orange); font-size: 12px; font-weight: 600;
@@ -271,45 +271,45 @@
     }
     .pricing-grid {
       display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 24px; max-width: 1024px; margin: 64px auto 0;
+      gap: 20px; max-width: 1024px; margin: 48px auto 0;
       position: relative; z-index: 1;
     }
     .pricing-card {
       background: linear-gradient(135deg, #111 0%, #000 100%);
-      border: 1px solid #1f2937; border-radius: 24px;
-      padding: 32px; cursor: pointer; transition: all 0.3s; position: relative;
+      border: 1px solid #1f2937; border-radius: 20px;
+      padding: 24px; cursor: pointer; transition: all 0.3s; position: relative;
     }
     .pricing-card.popular {
       border: 2px solid var(--orange);
       box-shadow: 0 0 60px rgba(249,115,22,0.2);
     }
-    .pricing-card:hover { transform: scale(1.03); }
+    .pricing-card:hover { transform: scale(1.02); }
     .popular-badge {
-      position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
       background: linear-gradient(135deg, var(--orange-dark), var(--orange));
-      color: #fff; font-size: 13px; font-weight: 700;
-      padding: 6px 24px; border-radius: 9999px; white-space: nowrap;
+      color: #fff; font-size: 12px; font-weight: 700;
+      padding: 5px 20px; border-radius: 9999px; white-space: nowrap;
     }
-    .pricing-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .pricing-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
     .pricing-card .plan-desc {
-      font-size: 13px; color: #6b7280; margin-bottom: 24px; min-height: 48px;
+      font-size: 12px; color: #6b7280; margin-bottom: 16px; min-height: 40px;
     }
     .price {
-      font-size: 48px; font-weight: 700; margin-bottom: 32px;
+      font-size: 40px; font-weight: 700; margin-bottom: 20px;
       display: flex; align-items: flex-start; gap: 4px;
     }
-    .price .currency { font-size: 22px; color: #6b7280; margin-top: 8px; }
-    .price .period { font-size: 16px; color: #6b7280; align-self: flex-end; margin-bottom: 6px; }
+    .price .currency { font-size: 18px; color: #6b7280; margin-top: 6px; }
+    .price .period { font-size: 14px; color: #6b7280; align-self: flex-end; margin-bottom: 4px; }
     .price.custom-price { color: var(--orange); align-items: center; }
-    .pricing-features { list-style: none; margin-bottom: 32px; }
+    .pricing-features { list-style: none; margin-bottom: 24px; }
     .pricing-features li {
-      display: flex; align-items: flex-start; gap: 12px;
-      font-size: 14px; color: #d1d5db; margin-bottom: 16px;
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 13px; color: #d1d5db; margin-bottom: 10px;
     }
-    .pricing-features li i { color: var(--orange); font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .pricing-features li i { color: var(--orange); font-size: 17px; flex-shrink: 0; margin-top: 1px; }
     .btn-plan {
-      width: 100%; padding: 16px; border-radius: 9999px;
-      font-size: 15px; font-weight: 600; border: none; cursor: pointer;
+      width: 100%; padding: 13px; border-radius: 9999px;
+      font-size: 14px; font-weight: 600; border: none; cursor: pointer;
       transition: all 0.3s;
     }
     .btn-plan.secondary {
@@ -325,15 +325,15 @@
       transform: scale(1.03);
     }
     .pricing-footer {
-      margin-top: 64px; text-align: center;
+      margin-top: 40px; text-align: center;
     }
-    .pricing-footer p { color: #6b7280; margin-bottom: 16px; }
+    .pricing-footer p { color: #6b7280; margin-bottom: 12px; font-size: 14px; }
     .pricing-perks {
       display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;
     }
     .pricing-perks span {
       display: flex; align-items: center; gap: 8px;
-      font-size: 14px; color: #4b5563;
+      font-size: 13px; color: #4b5563;
     }
     .pricing-perks span i { color: var(--orange); }
 
@@ -382,39 +382,39 @@
     #contact { background: #000; position: relative; overflow: hidden; }
     #contact::before {
       content: ''; position: absolute; top: 0; right: 0;
-      width: 600px; height: 600px; background: rgba(249,115,22,0.06);
+      width: 500px; height: 500px; background: rgba(249,115,22,0.06);
       border-radius: 50%; filter: blur(120px);
     }
     .contact-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 64px; max-width: 1100px; margin: 64px auto 0;
+      display: grid; grid-template-columns: 1fr 1.2fr;
+      gap: 48px; max-width: 1100px; margin: 48px auto 0;
       position: relative; z-index: 1;
     }
-    .contact-info h3 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
-    .contact-info > p { color: #6b7280; line-height: 1.8; margin-bottom: 32px; }
-    .contact-items { display: flex; flex-direction: column; gap: 24px; }
+    .contact-info h3 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+    .contact-info > p { color: #6b7280; line-height: 1.7; margin-bottom: 24px; font-size: 14px; }
+    .contact-items { display: flex; flex-direction: column; gap: 16px; }
     .contact-item {
-      display: flex; align-items: flex-start; gap: 16px;
+      display: flex; align-items: flex-start; gap: 14px;
     }
     .contact-item-icon {
-      width: 48px; height: 48px; flex-shrink: 0;
+      width: 42px; height: 42px; flex-shrink: 0;
       background: linear-gradient(135deg, var(--orange-dark), var(--orange));
-      border-radius: 14px; display: flex; align-items: center; justify-content: center;
-      font-size: 22px; color: #fff;
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 19px; color: #fff;
     }
-    .contact-item h4 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-    .contact-item p { font-size: 13px; color: #6b7280; line-height: 1.6; }
+    .contact-item h4 { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
+    .contact-item p { font-size: 12px; color: #6b7280; line-height: 1.5; }
     .social-row {
-      margin-top: 32px; padding-top: 32px;
+      margin-top: 20px; padding-top: 20px;
       border-top: 1px solid #1f2937;
     }
-    .social-row h4 { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
-    .socials { display: flex; gap: 12px; }
+    .social-row h4 { font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+    .socials { display: flex; gap: 10px; }
     .social-link {
-      width: 48px; height: 48px;
-      background: #111; border-radius: 14px;
+      width: 42px; height: 42px;
+      background: #111; border-radius: 12px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 18px; color: #fff; text-decoration: none;
+      font-size: 16px; color: #fff; text-decoration: none;
       transition: all 0.3s;
     }
     .social-link:hover {
@@ -423,19 +423,19 @@
     }
     .contact-form-wrap {
       background: linear-gradient(135deg, #111 0%, #000 100%);
-      border: 1px solid #1f2937; border-radius: 24px; padding: 32px;
+      border: 1px solid #1f2937; border-radius: 20px; padding: 24px;
     }
-    .form-group { margin-bottom: 20px; }
+    .form-group { margin-bottom: 14px; }
     .form-group label {
-      display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px;
+      display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px;
     }
     .form-group input,
     .form-group select,
     .form-group textarea {
       width: 100%; background: #000;
-      border: 1px solid #1f2937; border-radius: 12px;
-      padding: 12px 16px; color: #fff; font-family: inherit;
-      font-size: 14px; transition: border-color 0.3s; outline: none;
+      border: 1px solid #1f2937; border-radius: 10px;
+      padding: 10px 14px; color: #fff; font-family: inherit;
+      font-size: 13px; transition: border-color 0.3s; outline: none;
     }
     .form-group input:focus,
     .form-group select:focus,
@@ -443,13 +443,13 @@
       border-color: var(--orange);
     }
     .form-group textarea { resize: none; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .char-count { font-size: 11px; color: #4b5563; text-align: right; margin-top: 4px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .char-count { font-size: 11px; color: #4b5563; text-align: right; margin-top: 3px; }
     .btn-submit {
-      width: 100%; padding: 16px;
+      width: 100%; padding: 13px;
       background: linear-gradient(135deg, var(--orange-dark), var(--orange));
-      color: #fff; border: none; border-radius: 14px;
-      font-family: inherit; font-size: 15px; font-weight: 600;
+      color: #fff; border: none; border-radius: 12px;
+      font-family: inherit; font-size: 14px; font-weight: 600;
       cursor: pointer; transition: all 0.3s;
     }
     .btn-submit:hover {
@@ -897,7 +897,7 @@
             <div class="contact-item-icon"><i class="ri-mail-line"></i></div>
             <div>
               <h4>Email Us</h4>
-              <p>hello@techplanet.com<br>support@techplanet.com</p>
+              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9b1bcb5b5b699adbcbab1a9b5b8b7bcadf7bab6b4">[email&#160;protected]</a><br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c1f191c1c031e182c18090f041c000d020918420f0301">[email&#160;protected]</a></p>
             </div>
           </div>
         </div>
@@ -1014,7 +1014,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Stars
   const starsContainer = document.getElementById('stars');
   for (let i = 0; i < 80; i++) {
@@ -1055,16 +1055,4 @@
   // Form submit
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const btn = this.querySelector('.btn-submit');
-    btn.textContent = 'Message Sent!';
-    btn.style.background = 'linear-gradient(135deg, #16a34a, #22c55e)';
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.style.background = '';
-      this.reset();
-      document.getElementById('charCount').textContent = '0';
-    }, 3000);
-  });
-</script>
-</body>
-</html>
+    const btn = this.querySele
