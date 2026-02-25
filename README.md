@@ -176,7 +176,7 @@ hility-error {
   -webkit-margin-end: 0px;
   border-radius: 0.5rem;
   color: white;
-  padding: 8px;
+  padding: 0px;
   font-size: 13px;
   top: 15px;
   z-index: 9999;
