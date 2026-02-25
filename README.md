@@ -270,8 +270,8 @@
       border-radius: 50%; filter: blur(120px);
     }
     .pricing-grid {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 20px; max-width: 1024px; margin: 48px auto 0;
+      display: grid; grid-template-columns: repeat(2,1fr);
+      gap: 20px; max-width: 720px; margin: 48px auto 0;
       position: relative; z-index: 1;
     }
     .pricing-card {
@@ -386,8 +386,8 @@
       border-radius: 50%; filter: blur(120px);
     }
     .contact-grid {
-      display: grid; grid-template-columns: 1fr 1.2fr;
-      gap: 48px; max-width: 1100px; margin: 48px auto 0;
+      display: flex; justify-content: center;
+      max-width: 640px; margin: 48px auto 0;
       position: relative; z-index: 1;
     }
     .contact-info h3 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
@@ -737,22 +737,7 @@
         <button class="btn-plan primary-btn">Get Started</button>
       </div>
 
-      <div class="pricing-card">
-        <h3>Enterprise</h3>
-        <p class="plan-desc">Comprehensive solutions for large organizations with complex requirements</p>
-        <div class="price custom-price">Custom</div>
-        <ul class="pricing-features">
-          <li><i class="ri-checkbox-circle-fill"></i> Full Cloud Architecture</li>
-          <li><i class="ri-checkbox-circle-fill"></i> Enterprise Security Suite</li>
-          <li><i class="ri-checkbox-circle-fill"></i> Dedicated Account Manager</li>
-          <li><i class="ri-checkbox-circle-fill"></i> Unlimited Consultation</li>
-          <li><i class="ri-checkbox-circle-fill"></i> Custom AI Solutions</li>
-          <li><i class="ri-checkbox-circle-fill"></i> Data Analytics Platform</li>
-          <li><i class="ri-checkbox-circle-fill"></i> Real-time Monitoring</li>
-          <li><i class="ri-checkbox-circle-fill"></i> White-glove Service</li>
-        </ul>
-        <button class="btn-plan secondary">Contact Sales</button>
-      </div>
+
 
     </div>
     <div class="pricing-footer">
@@ -875,44 +860,7 @@
       <p class="section-subtitle">Ready to transform your business? Let's discuss how we can help you reach new heights</p>
     </div>
     <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Let's Connect</h3>
-        <p>Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="ri-map-pin-line"></i></div>
-            <div>
-              <h4>Visit Us</h4>
-              <p>123 Tech Galaxy Avenue<br>Silicon Valley, CA 94025</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="ri-phone-line"></i></div>
-            <div>
-              <h4>Call Us</h4>
-              <p>+1 (555) 123-4567<br>Mon-Fri 9am-6pm PST</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="ri-mail-line"></i></div>
-            <div>
-              <h4>Email Us</h4>
-              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9b1bcb5b5b699adbcbab1a9b5b8b7bcadf7bab6b4">[email&#160;protected]</a><br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c1f191c1c031e182c18090f041c000d020918420f0301">[email&#160;protected]</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="social-row">
-          <h4>Follow Our Journey</h4>
-          <div class="socials">
-            <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
-            <a href="#" class="social-link"><i class="ri-twitter-x-fill"></i></a>
-            <a href="#" class="social-link"><i class="ri-github-fill"></i></a>
-            <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form-wrap">
+      <div class="contact-form-wrap" style="width:100%">
         <form id="contact-form">
           <div class="form-group">
             <label>Full Name *</label>
