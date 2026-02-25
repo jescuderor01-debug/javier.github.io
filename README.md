@@ -1,52 +1,9 @@
-
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>javier.github.io</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="javier.github.io" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://jescuderor01-debug.github.io/javier.github.io/" />
-<meta property="og:url" content="https://jescuderor01-debug.github.io/javier.github.io/" />
-<meta property="og:site_name" content="javier.github.io" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="javier.github.io" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"javier.github.io","name":"javier.github.io","url":"https://jescuderor01-debug.github.io/javier.github.io/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/javier.github.io/assets/css/style.css?v=91f1690a210adf1030e33c5371075a7161b67c6f">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/javier.github.io/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://jescuderor01-debug.github.io/javier.github.io/">javier.github.io</a></h1>
-      
-
-      <html lang="en">
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TechPlanet — IT Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #00000000;
@@ -994,7 +951,7 @@
   <div class="grid-bg"></div>
   <div class="hero-content">
     <div class="hero-badge"><span class="hero-badge-dot"></span>NEXT-GEN IT SOLUTIONS</div>
-    <h1>Your universe of<br /><em>technological</em><br />solutions</h1>
+    <h1>Your universe of<br><em>technological</em><br>solutions</h1>
     <p class="hero-sub">TechPlanet delivers cutting-edge IT services, cybersecurity, cloud infrastructure, and custom software development that propels your business into the future.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">Launch Your Project</a>
@@ -1005,53 +962,59 @@
     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none">
       <defs>
         <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="rgba(255,140,0,0.08)" />
-          <stop offset="100%" stop-color="rgba(255,60,0,0)" />
+          <stop offset="0%" stop-color="rgba(255,140,0,0.08)"/>
+          <stop offset="100%" stop-color="rgba(255,60,0,0)"/>
         </radialGradient>
         <clipPath id="circleClip">
-          <circle cx="200" cy="200" r="155" />
+          <circle cx="200" cy="200" r="155"/>
         </clipPath>
         <!-- Spinning orbit animation gradient -->
         <linearGradient id="orbitGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="rgba(255,100,0,0)" />
-          <stop offset="40%" stop-color="rgba(255,140,0,0.9)" />
-          <stop offset="60%" stop-color="rgba(255,100,0,0.9)" />
-          <stop offset="100%" stop-color="rgba(255,100,0,0)" />
+          <stop offset="0%" stop-color="rgba(255,100,0,0)"/>
+          <stop offset="40%" stop-color="rgba(255,140,0,0.9)"/>
+          <stop offset="60%" stop-color="rgba(255,100,0,0.9)"/>
+          <stop offset="100%" stop-color="rgba(255,100,0,0)"/>
         </linearGradient>
         <linearGradient id="orbitGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="rgba(255,100,0,0)" />
-          <stop offset="35%" stop-color="rgba(255,120,0,0.7)" />
-          <stop offset="65%" stop-color="rgba(230,80,0,0.7)" />
-          <stop offset="100%" stop-color="rgba(255,100,0,0)" />
+          <stop offset="0%" stop-color="rgba(255,100,0,0)"/>
+          <stop offset="35%" stop-color="rgba(255,120,0,0.7)"/>
+          <stop offset="65%" stop-color="rgba(230,80,0,0.7)"/>
+          <stop offset="100%" stop-color="rgba(255,100,0,0)"/>
         </linearGradient>
       </defs>
 
       <!-- Background glow -->
-      <circle cx="200" cy="200" r="195" fill="url(#globeGlow)" />
+      <circle cx="200" cy="200" r="195" fill="url(#globeGlow)"/>
 
       <!-- Outer circle (globe border) -->
-      <circle cx="200" cy="200" r="155" stroke="rgba(255,140,0,0.75)" stroke-width="2.5" />
+      <circle cx="200" cy="200" r="155" stroke="rgba(255,140,0,0.75)" stroke-width="2.5"/>
 
       <!-- Meridian lines clipped inside globe -->
       <g clip-path="url(#circleClip)" stroke="rgba(255,140,0,0.55)" stroke-width="2" fill="none">
         <!-- Vertical meridians (longitude lines) -->
-        <ellipse cx="200" cy="200" rx="50" ry="155" />
-        <ellipse cx="200" cy="200" rx="105" ry="155" />
+        <ellipse cx="200" cy="200" rx="50" ry="155"/>
+        <ellipse cx="200" cy="200" rx="105" ry="155"/>
         <!-- Horizontal parallels (latitude lines) -->
-        <ellipse cx="200" cy="200" rx="155" ry="52" />
-        <ellipse cx="200" cy="200" rx="155" ry="108" />
+        <ellipse cx="200" cy="200" rx="155" ry="52"/>
+        <ellipse cx="200" cy="200" rx="155" ry="108"/>
       </g>
 
       <!-- Equator highlight -->
-      <ellipse cx="200" cy="200" rx="155" ry="52" stroke="rgba(255,100,0,0.9)" stroke-width="2.5" fill="none" clip-path="url(#circleClip)" />
+      <ellipse cx="200" cy="200" rx="155" ry="52"
+        stroke="rgba(255,100,0,0.9)" stroke-width="2.5" fill="none"
+        clip-path="url(#circleClip)"/>
 
       <!-- Single horizontal orbit, slightly tilted -->
-      <ellipse cx="200" cy="200" rx="195" ry="42" stroke="rgba(255,130,0,0.9)" stroke-width="3.5" fill="none" stroke-dasharray="0" transform="rotate(-8 200 200)" filter="url(#dotGlow)" />
+      <ellipse cx="200" cy="200" rx="195" ry="42"
+        stroke="rgba(255,130,0,0.9)" stroke-width="3.5" fill="none"
+        stroke-dasharray="0"
+        transform="rotate(-8 200 200)"
+        filter="url(#dotGlow)"/>
 
       <defs>
         <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
-          <feGaussianBlur stdDeviation="4" result="blur" />
-          <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
       </defs>
     </svg>
@@ -1087,38 +1050,38 @@
   <div class="services-grid reveal">
     <div class="service-card">
       <!-- Cybersecurity -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
       <h3>Cybersecurity</h3>
       <p>Advanced threat detection, penetration testing, and zero-trust architecture to keep your systems impenetrable.</p>
     </div>
     <div class="service-card">
       <!-- Cloud -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" /></svg></div>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
       <h3>Cloud Solutions</h3>
       <p>Scalable AWS, Azure, and GCP deployments engineered for performance, resilience, and cost efficiency.</p>
     </div>
     <div class="service-card">
       <!-- Custom Software -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /><polyline points="9 11 12 8 15 11" /><line x1="12" y1="8" x2="12" y2="16" /></svg></div>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><polyline points="9 11 12 8 15 11"/><line x1="12" y1="8" x2="12" y2="16"/></svg></div>
       <h3>Custom Software</h3>
       <p>End-to-end development of web apps, APIs, and internal tools built precisely to your requirements.</p>
     </div>
     <div class="service-card">
       <!-- IT Support -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div>
-      <h3>IT Support &amp; Managed</h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <h3>IT Support & Managed</h3>
       <p>24/7 helpdesk, proactive monitoring, and on-site support so your operations never skip a beat.</p>
     </div>
     <div class="service-card">
       <!-- Network -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg></div>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
       <h3>Network Infrastructure</h3>
       <p>Enterprise-grade LAN/WAN design, SD-WAN, and VPN solutions optimized for speed and reliability.</p>
     </div>
     <div class="service-card">
       <!-- AI & Automation -->
-      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4" /><line x1="8" y1="15" x2="8" y2="15" /><line x1="16" y1="15" x2="16" y2="15" /><path d="M6 11V9a6 6 0 0 1 12 0v2" /></svg></div>
-      <h3>AI &amp; Automation</h3>
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="15" x2="8" y2="15"/><line x1="16" y1="15" x2="16" y2="15"/><path d="M6 11V9a6 6 0 0 1 12 0v2"/></svg></div>
+      <h3>AI & Automation</h3>
       <p>Integrate machine learning pipelines and RPA workflows that slash costs and boost productivity.</p>
     </div>
   </div>
@@ -1127,7 +1090,7 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="about-visual reveal">
-    <div class="about-orb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="width:45%;height:45%;color:var(--accent)"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg></div>
+    <div class="about-orb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="width:45%;height:45%;color:var(--accent)"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
   </div>
   <div class="reveal">
     <div class="section-eyebrow"><span class="section-tag">About TechPlanet</span></div>
@@ -1152,13 +1115,13 @@
 
 <!-- PRICING -->
 <section id="prices">
-  <div class="section-eyebrow"><span class="section-tag">Plans &amp; Pricing</span></div>
+  <div class="section-eyebrow"><span class="section-tag">Plans & Pricing</span></div>
   <h2 class="section-title">Simple, Transparent Pricing</h2>
   <p class="section-desc">No hidden fees. No surprises. Choose the plan that fits your orbit.</p>
 
   <div class="price-table reveal">
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
       <div class="price-info">
         <div class="price-name">Equipment Repair</div>
         <div class="price-desc">Diagnosis and full repair of hardware components and devices</div>
@@ -1167,7 +1130,7 @@
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /><polyline points="8 10 12 14 16 10" /><line x1="12" y1="7" x2="12" y2="14" /></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 10 12 14 16 10"/><line x1="12" y1="7" x2="12" y2="14"/></svg></div>
       <div class="price-info">
         <div class="price-name">Software Installation</div>
         <div class="price-desc">Professional setup and configuration of any software or OS</div>
@@ -1176,7 +1139,7 @@
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
       <div class="price-info">
         <div class="price-name">Equipment Maintenance</div>
         <div class="price-desc">Preventive cleaning, updates and performance checks</div>
@@ -1185,7 +1148,7 @@
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /><polyline points="9 8 12 5 15 8" /><line x1="12" y1="5" x2="12" y2="15" /></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="9 8 12 5 15 8"/><line x1="12" y1="5" x2="12" y2="15"/></svg></div>
       <div class="price-info">
         <div class="price-name">Equipment Installation</div>
         <div class="price-desc">Setup and connection of new hardware, printers and peripherals</div>
@@ -1194,7 +1157,7 @@
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /><line x1="11" y1="8" x2="11" y2="14" /><line x1="8" y1="11" x2="14" y2="11" /></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       <div class="price-info">
         <div class="price-name">Software Troubleshooting</div>
         <div class="price-desc">Diagnosing and fixing errors, crashes and system issues</div>
@@ -1203,7 +1166,7 @@
       <a href="#contact" class="price-btn">Book</a>
     </div>
     <div class="price-row">
-      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" /></svg></div>
+      <div class="price-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
       <div class="price-info">
         <div class="price-name">Virus Removal</div>
         <div class="price-desc">Complete malware scan, removal and system protection setup</div>
@@ -1233,7 +1196,7 @@
         <li>Business hours support (9–18h)</li>
         <li>Monthly maintenance check</li>
         <li>Antivirus monitoring</li>
-        <li>Email &amp; phone helpdesk</li>
+        <li>Email & phone helpdesk</li>
         <li>Response within 24 hours</li>
       </ul>
       <a href="#contact" class="plan-btn">Get Shield Basic</a>
@@ -1249,7 +1212,7 @@
         <li>Up to 20 devices covered</li>
         <li>3 on-site visits per month</li>
         <li>Extended support (8–22h)</li>
-        <li>Weekly maintenance &amp; updates</li>
+        <li>Weekly maintenance & updates</li>
         <li>Advanced threat detection</li>
         <li>Cloud backup (500 GB)</li>
         <li>Response within 4 hours</li>
@@ -1401,10 +1364,10 @@
 
   <form class="contact-form reveal" onsubmit="handleSubmit(event)">
     <div class="form-row">
-      <input type="text" placeholder="Your name" required="" />
-      <input type="email" placeholder="Email address" required="" />
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email address" required>
     </div>
-    <input type="text" placeholder="Company name" />
+    <input type="text" placeholder="Company name">
     <textarea placeholder="Describe your IT needs or challenges..."></textarea>
     <button type="submit" class="form-submit">SEND MESSAGE ›</button>
   </form>
@@ -1560,12 +1523,4 @@
   }
 </script>
 </body>
-</html>
-
-
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  </body>
 </html>
