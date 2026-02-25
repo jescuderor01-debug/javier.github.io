@@ -1,6 +1,5 @@
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TechPlanet — IT Solutions</title>
@@ -288,7 +287,7 @@
   .planet-wrap svg {
     width: 100%;
     height: 100%;
-    filter: drop-shadow(0 0 50px rgba(255,120,0,0.4)) drop-shadow(0 0 100px rgba(255,80,0,0.2));
+    filter: drop-shadow(0 0 60px rgba(255,120,0,0.55)) drop-shadow(0 0 120px rgba(255,80,0,0.25));
   }
 
   /* ── STATS ── */
@@ -853,16 +852,7 @@
   }
 
   /* Grid decoration */
-  .grid-bg {
-    position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(255,140,0,0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,140,0,0.025) 1px, transparent 1px);
-    background-size: 64px 64px;
-    z-index: 0;
-    pointer-events: none;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
-  }
+  .grid-bg { display: none; }
 
   /* ══════════════════════════════
      RESPONSIVE
@@ -1015,8 +1005,10 @@
 
       <!-- Single horizontal orbit, slightly tilted -->
       <ellipse cx="200" cy="200" rx="195" ry="42"
-        stroke="url(#orbitGrad1)" stroke-width="3" fill="none"
-        transform="rotate(-8 200 200)"/>
+        stroke="rgba(255,130,0,0.9)" stroke-width="3.5" fill="none"
+        stroke-dasharray="0"
+        transform="rotate(-8 200 200)"
+        filter="url(#dotGlow)"/>
 
       <defs>
         <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
