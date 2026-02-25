@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>javier.github.io</title>
 <meta name="generator" content="Jekyll v3.10.0">
 <meta property="og:title" content="javier.github.io">
 <meta property="og:locale" content="en_US">
@@ -173,8 +172,8 @@ hility-error {
   align-items: center;
   width: auto;
   min-height: 28px;
-  -webkit-margin-start: auto;
-  -webkit-margin-end: auto;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
   border-radius: 0.5rem;
   color: white;
   padding: 8px;
