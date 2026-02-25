@@ -213,7 +213,7 @@
       background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
     }
     .services-grid {
-      display: grid; grid-template-columns: repeat(2,1fr);
+      display: grid; grid-template-columns: repeat(4,1fr);
       gap: 24px; margin-top: 64px;
     }
     .service-card {
