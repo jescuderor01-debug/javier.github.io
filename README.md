@@ -213,7 +213,7 @@
       background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
     }
     .services-grid {
-      display: grid; grid-template-columns: repeat(3,1fr);
+      display: grid; grid-template-columns: repeat(2,1fr);
       gap: 24px; margin-top: 64px;
     }
     .service-card {
@@ -611,19 +611,6 @@
     </div>
     <div class="services-grid">
 
-      <div class="service-card">
-        <div class="service-icon"><i class="ri-cloud-line"></i></div>
-        <h3>Cloud Solutions</h3>
-        <p>Elevate your infrastructure to the cloud with scalable, secure, and efficient solutions. We architect cloud environments that grow with your business.</p>
-        <ul class="service-features">
-          <li><i class="ri-checkbox-circle-line"></i> AWS & Azure</li>
-          <li><i class="ri-checkbox-circle-line"></i> Migration Services</li>
-          <li><i class="ri-checkbox-circle-line"></i> Cloud Security</li>
-          <li><i class="ri-checkbox-circle-line"></i> Cost Optimization</li>
-        </ul>
-        <div class="service-link">Learn More <i class="ri-arrow-right-line"></i></div>
-      </div>
-
       <div class="service-card featured">
         <div class="featured-badge">Featured</div>
         <div class="service-icon"><i class="ri-shield-check-line"></i></div>
@@ -660,19 +647,6 @@
           <li><i class="ri-checkbox-circle-line"></i> Mobile Apps</li>
           <li><i class="ri-checkbox-circle-line"></i> API Integration</li>
           <li><i class="ri-checkbox-circle-line"></i> Legacy Modernization</li>
-        </ul>
-        <div class="service-link">Learn More <i class="ri-arrow-right-line"></i></div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="ri-database-2-line"></i></div>
-        <h3>Data Analytics</h3>
-        <p>Turn raw data into strategic insights with advanced analytics and business intelligence solutions that drive informed decisions.</p>
-        <ul class="service-features">
-          <li><i class="ri-checkbox-circle-line"></i> Big Data</li>
-          <li><i class="ri-checkbox-circle-line"></i> BI Dashboards</li>
-          <li><i class="ri-checkbox-circle-line"></i> Data Warehousing</li>
-          <li><i class="ri-checkbox-circle-line"></i> Real-time Analytics</li>
         </ul>
         <div class="service-link">Learn More <i class="ri-arrow-right-line"></i></div>
       </div>
