@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -100,6 +101,7 @@
       background-clip: text;
       display: block;
       filter: drop-shadow(0 0 30px rgba(249,115,22,0.4));
+
     }
     .hero-content h1 .line2 {
       background: linear-gradient(135deg, var(--orange-dark), var(--orange-light), var(--orange));
@@ -107,6 +109,7 @@
       background-clip: text;
       display: block;
       filter: drop-shadow(0 0 40px rgba(249,115,22,0.7));
+
     }
     .hero-content p {
       font-size: 18px; color: #9ca3af; margin-bottom: 48px;
@@ -835,7 +838,10 @@
     </div>
     <div class="contact-grid">
       <div class="contact-form-wrap" style="width:100%">
-        <form id="contact-form">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ddc30a2a-91ee-44a2-9551-ced8a96931cb">
+          <input type="hidden" name="subject" value="Nuevo mensaje desde TechPlanet">
+          <input type="hidden" name="redirect" value="false">
           <div class="form-group">
             <label>Full Name *</label>
             <input type="text" name="name" placeholder="John Doe" required>
@@ -975,6 +981,38 @@
   });
 
   // Form submit
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
     e.preventDefault();
-    const btn = this.querySele
+    const btn = this.querySelector('.btn-submit');
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+
+    const formData = new FormData(this);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await res.json();
+      if (data.success) {
+        btn.textContent = '¡Mensaje enviado!';
+        btn.style.background = 'linear-gradient(135deg, #16a34a, #22c55e)';
+        this.reset();
+        document.getElementById('charCount').textContent = '0';
+      } else {
+        btn.textContent = 'Error, intenta de nuevo';
+        btn.style.background = 'linear-gradient(135deg, #dc2626, #ef4444)';
+      }
+    } catch(err) {
+      btn.textContent = 'Error, intenta de nuevo';
+      btn.style.background = 'linear-gradient(135deg, #dc2626, #ef4444)';
+    }
+    setTimeout(() => {
+      btn.textContent = 'Send Message';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  });
+</script>
+</body>
+</html>
