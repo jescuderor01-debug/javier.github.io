@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TechPlanet — IT Solutions</title>
@@ -123,10 +124,10 @@
     position: relative;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 45%;
     align-items: center;
-    gap: 4rem;
-    padding: 8rem max(6vw, 40px) 6rem;
+    gap: 0;
+    padding: 7rem 0 5rem 0;
     z-index: 1;
     overflow: hidden;
   }
@@ -158,7 +159,7 @@
   }
 
   .hero-content {
-    max-width: 640px;
+    padding: 0 max(6vw, 48px);
     position: relative;
     z-index: 2;
     text-align: left;
@@ -229,7 +230,7 @@
     margin-top: 2.75rem;
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     animation: fadeUp 0.9s 0.4s ease both;
   }
@@ -277,16 +278,19 @@
   .planet-wrap {
     position: relative;
     width: 100%;
-    max-width: 580px;
+    max-width: 100%;
+    padding: 2rem max(3vw, 24px) 2rem 0;
     aspect-ratio: 1;
     z-index: 1;
     pointer-events: none;
-    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .planet-wrap svg {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     filter: drop-shadow(0 0 60px rgba(255,120,0,0.55)) drop-shadow(0 0 120px rgba(255,80,0,0.25));
   }
 
@@ -861,7 +865,6 @@
   /* Large Desktop (≥ 1440px) */
   @media (min-width: 1440px) {
     section { padding: 8rem max(8vw, 100px); }
-    #hero { padding: 8rem max(8vw, 100px); gap: 6rem; }
     #stats { padding: 0 max(8vw, 100px); }
     nav { padding: 1.2rem max(8vw, 100px); }
     footer { padding: 3rem max(8vw, 100px); }
@@ -876,13 +879,12 @@
     #hero {
       grid-template-columns: 1fr;
       text-align: center;
-      padding: 8rem max(5vw, 24px) 5rem;
-      gap: 3rem;
+      padding: 8rem max(5vw, 24px) 4rem;
     }
-    .hero-content { max-width: 680px; margin: 0 auto; text-align: center; }
+    .hero-content { padding: 0; text-align: center; }
     .hero-sub { margin-left: auto; margin-right: auto; }
     .hero-btns { justify-content: center; }
-    .planet-wrap { max-width: 420px; margin: 0 auto; }
+    .planet-wrap { max-width: 420px; margin: 0 auto; padding: 0; aspect-ratio: 1; width: 70vw; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .plans-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
     .testi-grid { grid-template-columns: 1fr 1fr; }
@@ -896,7 +898,7 @@
     .footer-links { gap: 1.25rem; }
   }
   @media (max-width: 640px) {
-    #hero { padding: 7rem 4vw 4rem; gap: 2.5rem; }
+    #hero { padding: 7rem 4vw 4rem; }
     section { padding: 3.5rem 4vw; }
     #stats { grid-template-columns: 1fr 1fr; padding: 0 4vw; }
     .stat { padding: 1.75rem 0.5rem; }
@@ -905,7 +907,7 @@
     .hero-sub { font-size: 0.92rem; }
     .hero-btns { flex-direction: column; align-items: center; }
     .btn-primary, .btn-ghost { width: 100%; max-width: 290px; text-align: center; }
-    .planet-wrap { max-width: 300px; }
+    .planet-wrap { width: 80vw; max-width: 320px; }
     .about-visual { max-width: 260px; margin: 0 auto; }
     #about { grid-template-columns: 1fr; gap: 3rem; }
     .services-grid { grid-template-columns: 1fr; }
