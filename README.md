@@ -72,7 +72,7 @@
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden;
-      background: radial-gradient(ellipse at 60% 40%, #1a0a00 0%, #000 70%);
+      background: #000;
     }
     .stars {
       position: absolute; inset: 0; pointer-events: none;
@@ -210,14 +210,14 @@
 
     /* SERVICES */
     #services {
-      background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+      background: #000;
     }
     .services-grid {
       display: grid; grid-template-columns: repeat(4,1fr);
       gap: 24px; margin-top: 64px;
     }
     .service-card {
-      background: linear-gradient(135deg, #111 0%, #000 100%);
+      background: #000;
       border: 1px solid #1f2937; border-radius: 24px;
       padding: 32px; cursor: pointer;
       transition: all 0.3s; position: relative; overflow: hidden;
@@ -275,7 +275,7 @@
       position: relative; z-index: 1;
     }
     .pricing-card {
-      background: linear-gradient(135deg, #111 0%, #000 100%);
+      background: #000;
       border: 1px solid #1f2937; border-radius: 20px;
       padding: 24px; cursor: pointer; transition: all 0.3s; position: relative;
     }
@@ -338,10 +338,10 @@
     .pricing-perks span i { color: var(--orange); }
 
     /* FAQ */
-    #faq { background: linear-gradient(180deg, #000 0%, #0a0a0a 100%); }
+    #faq { background: #000; }
     .faq-list { max-width: 800px; margin: 64px auto 0; }
     .faq-item {
-      background: linear-gradient(135deg, #111 0%, #000 100%);
+      background: #000;
       border: 1px solid #1f2937; border-radius: 16px;
       overflow: hidden; margin-bottom: 12px;
       transition: border-color 0.3s;
@@ -371,7 +371,7 @@
     }
     .faq-cta {
       max-width: 800px; margin: 64px auto 0;
-      background: linear-gradient(135deg, #111, #000);
+      background: #000;
       border: 1px solid rgba(249,115,22,0.25);
       border-radius: 20px; padding: 40px; text-align: center;
     }
@@ -422,7 +422,7 @@
       transform: scale(1.1);
     }
     .contact-form-wrap {
-      background: linear-gradient(135deg, #111 0%, #000 100%);
+      background: #000;
       border: 1px solid #1f2937; border-radius: 20px; padding: 24px;
     }
     .form-group { margin-bottom: 14px; }
@@ -459,7 +459,7 @@
 
     /* FOOTER */
     footer {
-      background: linear-gradient(180deg, #0a0a0a 0%, #050a05 100%);
+      background: #000;
       padding: 80px 24px 32px;
     }
     .footer-grid {
