@@ -683,7 +683,7 @@
       <div class="pricing-card">
         <h3>Starter</h3>
         <p class="plan-desc">Perfect for small businesses taking their first steps into the digital universe</p>
-        <div class="price"><span class="currency">$</span>777<span class="period">/month</span></div>
+        <div class="price"><span class="currency">€</span>599<span class="period">/month</span></div>
         <ul class="pricing-features">
           <li><i class="ri-checkbox-circle-fill"></i> Cloud Infrastructure Setup</li>
           <li><i class="ri-checkbox-circle-fill"></i> Basic Security Package</li>
@@ -699,7 +699,7 @@
         <div class="popular-badge">Most Popular</div>
         <h3>Professional</h3>
         <p class="plan-desc">Ideal for growing companies ready to scale their technological capabilities</p>
-        <div class="price"><span class="currency">$</span>6,769<span class="period">/month</span></div>
+        <div class="price"><span class="currency">€</span>1.299<span class="period">/month</span></div>
         <ul class="pricing-features">
           <li><i class="ri-checkbox-circle-fill"></i> Advanced Cloud Solutions</li>
           <li><i class="ri-checkbox-circle-fill"></i> Enhanced Cybersecurity</li>
